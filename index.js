@@ -9,7 +9,6 @@ const port = process.env.PORT || 4000
 
 server.use(helmet())
 server.use(express.json())
-
 server.use("/", generalRouter)
 server.use("/cars", carsRouter)
 server.use("/sales", salesRouter)
